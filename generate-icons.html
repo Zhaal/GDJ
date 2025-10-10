@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur d'icônes GDJ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1a1a2e;
+            color: white;
+        }
+        h1 {
+            color: #ffd700;
+        }
+        button {
+            background: #ffd700;
+            color: #1a1a2e;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        button:hover {
+            background: #ffed4e;
+        }
+        #preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .icon-preview {
+            text-align: center;
+        }
+        .icon-preview canvas {
+            border: 1px solid #ffd700;
+            border-radius: 5px;
+        }
+        .icon-preview p {
+            margin: 5px 0;
+            font-size: 12px;
+            color: #ffd700;
+        }
+        .instructions {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 15px;
+            border-left: 3px solid #ffd700;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Générateur d'icônes pour Les Gardiens du Jeu</h1>
+
+    <div class="instructions">
+        <h3>Instructions :</h3>
+        <ol>
+            <li>Cliquez sur "Générer les icônes"</li>
+            <li>Les icônes seront créées et affichées ci-dessous</li>
+            <li>Cliquez sur "Télécharger toutes les icônes"</li>
+            <li>Placez-les dans un dossier <code>icons/</code> à la racine de votre projet</li>
+        </ol>
+    </div>
+
+    <button onclick="genererIcones()">✨ Générer les icônes</button>
+    <button onclick="telechargerToutes()" id="downloadBtn" style="display:none;">📦 Télécharger toutes les icônes (ZIP)</button>
+
+    <div id="preview"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script>
+        const sizes = [16, 32, 72, 96, 128, 144, 152, 192, 384, 512];
+        const canvases = {};
+
+        function genererIcones() {
+            const preview = document.getElementById('preview');
+            preview.innerHTML = '';
+
+            sizes.forEach(size => {
+                const canvas = document.createElement('canvas');
+                canvas.width = size;
+                canvas.height = size;
+                const ctx = canvas.getContext('2d');
+
+                // Fond doré
+                ctx.fillStyle = '#ffd700';
+                ctx.fillRect(0, 0, size, size);
+
+                // Texte GDJ avec ombre
+                ctx.fillStyle = '#1a1a2e';
+                ctx.font = `bold ${size/3}px Arial`;
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+
+                // Ombre pour effet 3D
+                ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
+                ctx.shadowBlur = size / 20;
+                ctx.shadowOffsetX = size / 40;
+                ctx.shadowOffsetY = size / 40;
+
+                ctx.fillText('GDJ', size/2, size/2);
+
+                // Ajouter au DOM pour preview
+                const container = document.createElement('div');
+                container.className = 'icon-preview';
+
+                const previewCanvas = canvas.cloneNode();
+                previewCanvas.getContext('2d').drawImage(canvas, 0, 0);
+                previewCanvas.style.width = '100%';
+                previewCanvas.style.maxWidth = '100px';
+
+                const label = document.createElement('p');
+                label.textContent = `${size}x${size}`;
+
+                const downloadBtn = document.createElement('button');
+                downloadBtn.textContent = '💾';
+                downloadBtn.style.padding = '5px 10px';
+                downloadBtn.style.fontSize = '12px';
+                downloadBtn.onclick = () => telechargerIcone(canvas, size);
+
+                container.appendChild(previewCanvas);
+                container.appendChild(label);
+                container.appendChild(downloadBtn);
+                preview.appendChild(container);
+
+                // Sauvegarder pour téléchargement groupé
+                canvases[size] = canvas;
+            });
+
+            document.getElementById('downloadBtn').style.display = 'inline-block';
+        }
+
+        function telechargerIcone(canvas, size) {
+            canvas.toBlob(blob => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `icon-${size}x${size}.png`;
+                a.click();
+                URL.revokeObjectURL(url);
+            });
+        }
+
+        async function telechargerToutes() {
+            const zip = new JSZip();
+            const iconsFolder = zip.folder('icons');
+
+            for (const [size, canvas] of Object.entries(canvases)) {
+                const blob = await new Promise(resolve => canvas.toBlob(resolve));
+                iconsFolder.file(`icon-${size}x${size}.png`, blob);
+            }
+
+            // Générer le ZIP
+            const content = await zip.generateAsync({ type: 'blob' });
+
+            // Télécharger
+            const url = URL.createObjectURL(content);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'gdj-icons.zip';
+            a.click();
+            URL.revokeObjectURL(url);
+
+            alert('✅ Toutes les icônes ont été téléchargées ! Décompressez le fichier ZIP et placez le dossier "icons" à la racine de votre projet GDJ.');
+        }
+
+        // Générer automatiquement au chargement de la page
+        window.addEventListener('load', genererIcones);
+    </script>
+</body>
+</html>

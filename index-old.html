@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Gardiens du Jeu - Gestion de Stock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Page de connexion -->
+        <div id="loginPage" class="page active">
+            <div class="container">
+                <h1>Les Gardiens du Jeu</h1>
+                <h2>Connexion</h2>
+                <form id="loginForm">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                    <input type="password" id="loginPassword" placeholder="Mot de passe" required>
+                    <button type="submit">Se connecter</button>
+                </form>
+                <p>Pas encore de compte ? <a href="#" id="showRegister">S'inscrire</a></p>
+            </div>
+        </div>
+
+        <!-- Page d'inscription -->
+        <div id="registerPage" class="page">
+            <div class="container">
+                <h1>Les Gardiens du Jeu</h1>
+                <h2>Inscription</h2>
+                <form id="registerForm">
+                    <input type="text" id="registerNom" placeholder="Nom" required>
+                    <input type="text" id="registerPrenom" placeholder="Prénom" required>
+                    <input type="email" id="registerEmail" placeholder="Email" required>
+                    <input type="password" id="registerPassword" placeholder="Mot de passe" required>
+                    <button type="submit">S'inscrire</button>
+                </form>
+                <p>Déjà un compte ? <a href="#" id="showLogin">Se connecter</a></p>
+            </div>
+        </div>
+
+        <!-- Page d'administration -->
+        <div id="adminPage" class="page">
+            <nav class="navbar">
+                <h1>Les Gardiens du Jeu - Administration</h1>
+                <div>
+                    <span id="adminUserInfo"></span>
+                    <button id="logoutBtn">Déconnexion</button>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="produits">Produits</button>
+                    <button class="tab-btn" data-tab="mouvements">Mouvements de stock</button>
+                    <button class="tab-btn" data-tab="membres">Membres</button>
+                </div>
+
+                <!-- Onglet Produits -->
+                <div id="produitsTab" class="tab-content active">
+                    <div class="section-header">
+                        <h2>Gestion des Produits</h2>
+                        <button id="addProductBtn" class="btn-primary">Ajouter un produit</button>
+                    </div>
+
+                    <div id="productForm" class="form-container" style="display: none;">
+                        <h3 id="formTitle">Ajouter un produit</h3>
+                        <form id="productFormElement">
+                            <input type="hidden" id="productId">
+                            <input type="text" id="productNom" placeholder="Nom du produit" required>
+                            <input type="number" step="0.01" id="productPrix" placeholder="Prix (€)" required>
+                            <input type="number" id="productStock" placeholder="Stock" required>
+                            <select id="productCategorie" required>
+                                <option value="">Sélectionner une catégorie</option>
+                                <option value="Chocolat">Chocolat</option>
+                                <option value="Boisson">Boisson</option>
+                                <option value="Snack">Snack</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                            <div class="form-actions">
+                                <button type="submit" class="btn-primary">Enregistrer</button>
+                                <button type="button" id="cancelProductBtn" class="btn-secondary">Annuler</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <table id="productsTable">
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Catégorie</th>
+                                <th>Prix</th>
+                                <th>Stock</th>
+                                <th>Date d'ajout</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productsTableBody"></tbody>
+                    </table>
+                </div>
+
+                <!-- Onglet Mouvements de stock -->
+                <div id="mouvementsTab" class="tab-content">
+                    <h2>Mouvements de stock</h2>
+                    <p>Sélectionnez un produit dans l'onglet Produits pour voir son historique.</p>
+                </div>
+
+                <!-- Onglet Membres -->
+                <div id="membresTab" class="tab-content">
+                    <h2>Liste des Membres</h2>
+                    <table id="membersTable">
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Prénom</th>
+                                <th>Email</th>
+                                <th>Ardoise</th>
+                                <th>Date d'inscription</th>
+                            </tr>
+                        </thead>
+                        <tbody id="membersTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page membre -->
+        <div id="memberPage" class="page">
+            <nav class="navbar">
+                <h1>Les Gardiens du Jeu</h1>
+                <div>
+                    <span id="memberUserInfo"></span>
+                    <button id="logoutMemberBtn">Déconnexion</button>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="shopping">Commander</button>
+                    <button class="tab-btn" data-tab="history">Historique</button>
+                </div>
+
+                <!-- Onglet Commande -->
+                <div id="shoppingTab" class="tab-content active">
+                    <h2>Sélectionner des produits</h2>
+
+                    <div id="productsList" class="products-grid"></div>
+
+                    <div class="cart-summary">
+                        <h3>Panier</h3>
+                        <div id="cartItems"></div>
+                        <div class="cart-total">
+                            <strong>Total: <span id="cartTotal">0.00</span> €</strong>
+                        </div>
+                        <div class="payment-method">
+                            <label>Mode de paiement:</label>
+                            <select id="paymentMethod">
+                                <option value="especes">Espèces</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="ardoise">Ardoise (payer plus tard)</option>
+                            </select>
+                        </div>
+                        <button id="validateOrderBtn" class="btn-primary btn-large">Valider la commande</button>
+                    </div>
+                </div>
+
+                <!-- Onglet Historique -->
+                <div id="historyTab" class="tab-content">
+                    <h2>Mon historique</h2>
+                    <div class="user-stats">
+                        <div class="stat-card">
+                            <h3>Ardoise actuelle</h3>
+                            <p class="stat-value" id="userArdoise">0.00 €</p>
+                        </div>
+                    </div>
+                    <table id="historyTable">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Produits</th>
+                                <th>Montant</th>
+                                <th>Paiement</th>
+                                <th>Statut</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
