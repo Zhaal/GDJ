@@ -225,19 +225,6 @@
   },
   "ludotheque": [
     {
-      "id": 3,
-      "nom": "Twilight Imperium",
-      "proprietaire": "Henocque  Gregoire ",
-      "min_joueurs": 3,
-      "max_joueurs": 8,
-      "duree": 360,
-      "age_min": 14,
-      "description": "4X spatial",
-      "date_ajout": "2025-10-04T17:26:43.779Z",
-      "soumis_par": 2,
-      "photos": []
-    },
-    {
       "id": 4,
       "nom": "The Lord of the Rings: Journeys in Middle-earth – Dwellers in Darkness Figure Pack",
       "proprietaire": "Grégoire  Hénocque ",
