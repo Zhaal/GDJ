@@ -19,7 +19,7 @@
     {
       "nom": "Lion",
       "prix": 1,
-      "stock": 16,
+      "stock": 26,
       "categorie": "Chocolat",
       "id": 3,
       "date_ajout": "2025-10-05T07:47:45.963Z"
@@ -197,7 +197,7 @@
     "lastEvenementId": 10,
     "lastAnnonceId": 1,
     "lastSoumissionId": 15,
-    "lastReapproId": 2,
+    "lastReapproId": 3,
     "lastAchatDiversId": 0,
     "lastFondsId": 0,
     "soumissions": {
@@ -593,6 +593,17 @@
       "cout_total": 5000,
       "note": "",
       "date": "2025-10-11T08:57:58.280Z",
+      "auteur_id": 1
+    },
+    {
+      "id": 3,
+      "produit_id": 3,
+      "produit_nom": "Lion",
+      "quantite": 10,
+      "cout_unitaire": 15,
+      "cout_total": 15,
+      "note": "",
+      "date": "2025-10-11T15:54:48.630Z",
       "auteur_id": 1
     }
   ],
