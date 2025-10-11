@@ -3,7 +3,7 @@
     {
       "nom": "Coca",
       "prix": 1,
-      "stock": 17,
+      "stock": 117,
       "categorie": "Boisson",
       "id": 1,
       "date_ajout": "2025-10-05T07:30:08.888Z"
@@ -197,7 +197,7 @@
     "lastEvenementId": 10,
     "lastAnnonceId": 1,
     "lastSoumissionId": 13,
-    "lastReapproId": 1,
+    "lastReapproId": 2,
     "lastAchatDiversId": 0,
     "lastFondsId": 0,
     "soumissions": {
@@ -515,6 +515,17 @@
       "cout_total": 5,
       "note": "",
       "date": "2025-10-10T17:53:56.915Z",
+      "auteur_id": 1
+    },
+    {
+      "id": 2,
+      "produit_id": 1,
+      "produit_nom": "Coca",
+      "quantite": 100,
+      "cout_unitaire": 50,
+      "cout_total": 5000,
+      "note": "",
+      "date": "2025-10-11T08:57:58.280Z",
       "auteur_id": 1
     }
   ],
