@@ -30,9 +30,21 @@
       "email": null,
       "mot_de_passe": "Hhw6QVFeYAA=",
       "role": "membre",
-      "statut": "valide",
+      "statut": "en_attente",
       "ardoise": 0,
       "date_inscription": "2025-10-11T18:06:00.790Z"
+    },
+    {
+      "id": 3,
+      "pseudo": "Kulbo",
+      "nom": "FilzVVZnZAVkEnh+",
+      "prenom": "EQMiW1BndE9kEnh+",
+      "email": null,
+      "mot_de_passe": "HhMMRQ==",
+      "role": "membre",
+      "statut": "en_attente",
+      "ardoise": 0,
+      "date_inscription": "2025-10-11T18:08:58.766Z"
     }
   ],
   "transactions": [],
