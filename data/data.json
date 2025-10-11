@@ -12,12 +12,24 @@
       "statut": "valide",
       "ardoise": 0,
       "date_inscription": "2025-10-11T18:00:23.502Z"
+    },
+    {
+      "id": 2,
+      "pseudo": "Kulbo",
+      "nom": "FilzVVZnZAVkEnh+",
+      "prenom": "EQMiW1BndE9kEnh+",
+      "email": null,
+      "mot_de_passe": "HhMMRQ==",
+      "role": "membre",
+      "statut": "en_attente",
+      "ardoise": 0,
+      "date_inscription": "2025-10-11T18:02:16.599Z"
     }
   ],
   "transactions": [],
   "settings": {
     "lastProductId": 0,
-    "lastMembreId": 1,
+    "lastMembreId": 2,
     "lastTransactionId": 0,
     "lastGameId": 0,
     "lastAdhesionId": 0,
@@ -54,5 +66,6 @@
   "reapprovisionnements": [],
   "achatsDivers": [],
   "fonds": [],
-  "membresPreferences": {}
+  "membresPreferences": {},
+  "soumissions": []
 }
