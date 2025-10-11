@@ -91,7 +91,7 @@
         }
       },
       "photos": {
-        "active": false
+        "active": true
       }
     },
     "moderateurs": [
