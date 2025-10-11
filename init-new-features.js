@@ -268,7 +268,7 @@ function loadLudothequeMembre(searchTerm = '', dureeFilter = 'all', membreFilter
                     <div class="game-info">⏱️ ${game.duree} min</div>
                     <div class="game-info">🎯 ${game.age_min}+</div>
                 </div>
-                ${game.description ? `<div class="game-info" style="margin-bottom: 15px;">${game.description}</div>` : ''}
+                ${createTruncatedDescription(game.description, `membre-view-${game.id}`)}
                 ${game.image ? `<div style="margin-bottom: 15px;"><img src="${game.image}" alt="${game.nom}" style="max-width: 200px; border-radius: 8px; border: 2px solid rgba(255, 215, 0, 0.3);"></div>` : ''}
                 ${game.categories && game.categories.length > 0 ? `<div class="game-info" style="margin-bottom: 10px;"><strong>Catégories:</strong> ${game.categories.join(', ')}</div>` : ''}
                 ${game.mecaniques && game.mecaniques.length > 0 ? `<div class="game-info" style="margin-bottom: 10px;"><strong>Mécaniques:</strong> ${game.mecaniques.join(', ')}</div>` : ''}
