@@ -254,7 +254,7 @@ async function ajouterReapprovisionnement() {
     const quantite = parseInt(await prompt('Quantité à ajouter:'));
     if (!quantite || quantite <= 0) return;
 
-    const coutUnitaire = parseFloat(await prompt('Coût unitaire (€):', '0.50'));
+    const coutUnitaire = parseFloat(await prompt('Coût du pack (€):', '14.92'));
     if (coutUnitaire === null) return;
 
     const note = await prompt('Note (optionnel):') || '';
@@ -265,7 +265,7 @@ async function ajouterReapprovisionnement() {
         produit_nom: produit.nom,
         quantite: quantite,
         cout_unitaire: coutUnitaire,
-        cout_total: quantite * coutUnitaire,
+        cout_total: coutUnitaire,
         note: note,
         date: new Date().toISOString(),
         auteur_id: currentUser.id
