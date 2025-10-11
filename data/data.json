@@ -192,7 +192,7 @@
     "lastProductId": 4,
     "lastMembreId": 3,
     "lastTransactionId": 6,
-    "lastGameId": 4,
+    "lastGameId": 5,
     "lastAdhesionId": 2,
     "lastEvenementId": 10,
     "lastAnnonceId": 1,
@@ -252,6 +252,23 @@
       "annee_publication": "2020",
       "note": "8.15",
       "date_ajout": "2025-10-11T12:34:47.318Z",
+      "soumis_par": 2
+    },
+    {
+      "id": 5,
+      "nom": "Twilight Imperium: Fourth Edition",
+      "proprietaire": "Henocque  Gregoire ",
+      "min_joueurs": 3,
+      "max_joueurs": 6,
+      "duree": 480,
+      "age_min": 14,
+      "description": "Twilight Imperium (quatrième édition) est un jeu de conquête galactique dans lequel trois à six joueurs jouent chacun le rôle de l'une des dix-sept factions en lice pour la domination galactique par la puissance militaire, les manœuvres politiques et les négociations économiques. Chaque faction offre une expérience de jeu complètement différente, des fantômes de Creuss aux Émirats de Hacan, maîtres du commerce et de l'économie. Ces dix-sept races se voient offrir de nombreux chemins vers la victoire, mais une seule peut s'asseoir sur le trône de Mecatol Rex en tant que nouveaux maîtres de la galaxie.\n\nIl n'y a jamais deux jeux de Twilight Imperium identiques. Au début de chaque âge galactique, le plateau de jeu est construit de manière unique et stratégique parmi 51 tuiles de galaxies qui présentent tout, des nouvelles planètes luxuriantes et des supernovas aux champs d'astéroïdes et aux fentes gravitationnelles. Les joueurs reçoivent une main de ces tuiles et créent à tour de rôle la galaxie autour de Mecatol Rex, la planète capitale assise au centre du plateau. Une tempête ionique peut empêcher votre race de progresser dans la galaxie tandis qu'une faille gravitationnelle placée par hasard peut vous protéger de vos ennemis les plus proches. La galaxie est à vous à la fois pour fabriquer et dominer. Un tour d'Imperium crépusculaire commence avec les joueurs sélectionnant l'une des huit cartes de stratégie qui déterminent à la fois l'ordre des joueurs et donnent à leur propriétaire une action stratégique unique pour ce tour. Ceux-ci peuvent faire n'importe quoi, de fournir des jetons de commande supplémentaires à permettre à un joueur de contrôler le commerce dans toute la galaxie. Une fois ces stratégies sélectionnées, les joueurs déplacent à tour de rôle leurs flottes d'un système à l'autre, revendiquant de nouvelles planètes pour leurs empires et s'engageant dans la guerre et le commerce avec d'autres factions. À la fin d'un tour, les joueurs se réunissent en grand conseil pour adopter de nouvelles lois et de nouveaux ordres du jour, bousculant le jeu de manière imprévisible.",
+      "bggId": "233078",
+      "image": "https://cf.geekdo-images.com/_Ppn5lssO5OaildSE-FgFA__original/img/kVpZ0Maa_LeQGWxOqsYKP3N4KUY=/0x0/filters:format(jpeg)/pic3727516.jpg",
+      "thumbnail": "https://cf.geekdo-images.com/_Ppn5lssO5OaildSE-FgFA__small/img/lfEukJE0JsoZZObaF9K9YnFp62E=/fit-in/200x150/filters:strip_icc()/pic3727516.jpg",
+      "annee_publication": "2017",
+      "note": "8.57",
+      "date_ajout": "2025-10-11T14:58:44.202Z",
       "soumis_par": 2
     }
   ],
@@ -547,7 +564,7 @@
     {
       "id": 15,
       "type": "jeu",
-      "statut": "en_attente",
+      "statut": "accepte",
       "auteur_id": 2,
       "date_soumission": "2025-10-11T14:58:38.771Z",
       "data": {
@@ -563,7 +580,9 @@
         "thumbnail": "https://cf.geekdo-images.com/_Ppn5lssO5OaildSE-FgFA__small/img/lfEukJE0JsoZZObaF9K9YnFp62E=/fit-in/200x150/filters:strip_icc()/pic3727516.jpg",
         "annee_publication": "2017",
         "note": "8.57"
-      }
+      },
+      "date_validation": "2025-10-11T14:58:44.202Z",
+      "validateur_id": 2
     }
   ],
   "reapprovisionnements": [
