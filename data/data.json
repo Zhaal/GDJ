@@ -1,23 +1,44 @@
 {
-  "produits": [],
+  "produits": [
+    {
+      "nom": "Mars",
+      "prix": 1,
+      "stock": 10,
+      "categorie": "Chocolat",
+      "id": 1,
+      "date_ajout": "2025-10-11T17:57:11.538Z"
+    }
+  ],
   "membres": [
     {
       "id": 1,
-      "pseudo": "Kulbo",
-      "nom": "FilzVVZnZAVkEnh+",
-      "prenom": "EQMiW1BndE9kEnh+",
+      "pseudo": "Admin",
+      "nom": "Hhw6QVFeYAA=",
+      "prenom": "Hhw6QVFXDwg=",
       "email": null,
-      "mot_de_passe": "HhMMRQ==",
+      "mot_de_passe": "HXYYXA==",
       "role": "admin",
       "statut": "valide",
       "ardoise": 0,
-      "date_inscription": "2025-10-11T18:04:45.647Z"
+      "date_inscription": "2025-10-11T17:56:45.695Z"
+    },
+    {
+      "id": 2,
+      "pseudo": "Zhaal",
+      "nom": "FAkFXVBdC19OCxMv",
+      "prenom": "FXcGaUNnVkNMCw8v",
+      "email": null,
+      "mot_de_passe": "Hhw6QVFeYAA=",
+      "role": "membre",
+      "statut": "en_attente",
+      "ardoise": 0,
+      "date_inscription": "2025-10-11T18:06:00.790Z"
     }
   ],
   "transactions": [],
   "settings": {
-    "lastProductId": 0,
-    "lastMembreId": 1,
+    "lastProductId": 1,
+    "lastMembreId": 2,
     "lastTransactionId": 0,
     "lastGameId": 0,
     "lastAdhesionId": 0,
@@ -54,5 +75,6 @@
   "reapprovisionnements": [],
   "achatsDivers": [],
   "fonds": [],
-  "membresPreferences": {}
+  "membresPreferences": {},
+  "soumissions": []
 }
