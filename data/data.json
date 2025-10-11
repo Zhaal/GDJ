@@ -142,7 +142,14 @@
       "jeu_id": 1,
       "type_evenement": "initiation",
       "max_participants": null,
-      "participants": [],
+      "participants": [
+        {
+          "membre_id": 3,
+          "nom": "Thomas  Boquet ",
+          "date_inscription": "2025-10-11T18:22:22.609Z",
+          "type": "joueur"
+        }
+      ],
       "createur_id": 2,
       "date_creation": "2025-10-11T18:20:50.030Z"
     },
