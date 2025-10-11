@@ -1,5 +1,14 @@
 {
-  "produits": [],
+  "produits": [
+    {
+      "nom": "Mars",
+      "prix": 1,
+      "stock": 10,
+      "categorie": "Chocolat",
+      "id": 1,
+      "date_ajout": "2025-10-11T17:57:11.538Z"
+    }
+  ],
   "membres": [
     {
       "id": 1,
@@ -16,7 +25,7 @@
   ],
   "transactions": [],
   "settings": {
-    "lastProductId": 0,
+    "lastProductId": 1,
     "lastMembreId": 1,
     "lastTransactionId": 0,
     "lastGameId": 0,
@@ -54,5 +63,6 @@
   "reapprovisionnements": [],
   "achatsDivers": [],
   "fonds": [],
-  "membresPreferences": {}
+  "membresPreferences": {},
+  "soumissions": []
 }
