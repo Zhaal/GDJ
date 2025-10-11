@@ -3,7 +3,7 @@
     {
       "nom": "Mars",
       "prix": 1,
-      "stock": 10,
+      "stock": 7,
       "categorie": "Chocolat",
       "id": 1,
       "date_ajout": "2025-10-11T17:57:11.538Z"
@@ -47,11 +47,27 @@
       "date_inscription": "2025-10-11T18:08:58.766Z"
     }
   ],
-  "transactions": [],
+  "transactions": [
+    {
+      "id": 1,
+      "membre_id": 3,
+      "produits": [
+        {
+          "nom": "Mars",
+          "quantite": 3,
+          "prix_unitaire": 1
+        }
+      ],
+      "montant_total": 3,
+      "mode_paiement": "paypal",
+      "statut": "payee",
+      "date_transaction": "2025-10-11T18:10:43.383Z"
+    }
+  ],
   "settings": {
     "lastProductId": 1,
     "lastMembreId": 3,
-    "lastTransactionId": 0,
+    "lastTransactionId": 1,
     "lastGameId": 0,
     "lastAdhesionId": 0,
     "lastEvenementId": 0,
