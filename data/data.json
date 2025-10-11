@@ -196,7 +196,7 @@
     "lastAdhesionId": 2,
     "lastEvenementId": 10,
     "lastAnnonceId": 1,
-    "lastSoumissionId": 13,
+    "lastSoumissionId": 14,
     "lastReapproId": 2,
     "lastAchatDiversId": 0,
     "lastFondsId": 0,
@@ -503,6 +503,27 @@
       },
       "date_validation": "2025-10-05T15:06:56.580Z",
       "validateur_id": 2
+    },
+    {
+      "id": 14,
+      "type": "jeu",
+      "statut": "en_attente",
+      "auteur_id": 2,
+      "date_soumission": "2025-10-11T12:34:39.826Z",
+      "data": {
+        "nom": "The Lord of the Rings: Journeys in Middle-earth – Dwellers in Darkness Figure Pack",
+        "proprietaire": "Grégoire  Hénocque ",
+        "min_joueurs": 1,
+        "max_joueurs": 5,
+        "duree": 120,
+        "age_min": 0,
+        "description": "Que vous vous attaquiez aux nouveaux défis de Haunting of Dale ou que vous réexploriez les épreuves de la campagne Shadowed Paths, vous affronterez des méchants puissants, tels que le Supplicant de Morgoth et Ollie le Troll. Avec le pack de figurines Dwellers in Darkness, vous pouvez donner vie à ces méchants avec de nouvelles figurines haut de gamme, ainsi qu'une pour la teinte mystérieuse et sinistre présentée dans Haunting of Dale. Contre des ennemis aussi puissants, la fête devra être bien préparée. Heureusement, Dwellers in Darkness comprend également un nouveau lot d'équipement, y compris une copie supplémentaire de l'article Couteau (et de nouvelles améliorations) et un tout nouveau bibelot sous la forme du Silver Circlet. Combinez ces outils utiles avec trois nouveaux titres, tels que Undying, et votre groupe devrait être plus que prêt à relever les défis posés par l'obscurité.",
+        "bggId": "316630",
+        "image": "https://cf.geekdo-images.com/BbsGcVULOhD8qIFXCyp3Lw__original/img/2jnErAkZ1PbX1FASLGgtYS8PPDs=/0x0/filters:format(jpeg)/pic5871000.jpg",
+        "thumbnail": "https://cf.geekdo-images.com/BbsGcVULOhD8qIFXCyp3Lw__small/img/5cjELCTcsTx0A_ty1JEz9zuzYqg=/fit-in/200x150/filters:strip_icc()/pic5871000.jpg",
+        "annee_publication": "2020",
+        "note": "8.15"
+      }
     }
   ],
   "reapprovisionnements": [
