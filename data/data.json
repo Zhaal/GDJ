@@ -70,7 +70,7 @@
     "lastTransactionId": 1,
     "lastGameId": 1,
     "lastAdhesionId": 1,
-    "lastEvenementId": 1,
+    "lastEvenementId": 2,
     "lastAnnonceId": 0,
     "lastReapproId": 0,
     "lastAchatDiversId": 0,
@@ -145,6 +145,20 @@
       "participants": [],
       "createur_id": 2,
       "date_creation": "2025-10-11T18:20:50.030Z"
+    },
+    {
+      "id": 2,
+      "titre": "Twilight ",
+      "date": "2025-10-11",
+      "heure": "19:00",
+      "description": "",
+      "jeu_id": 1,
+      "type_evenement": "tournoi",
+      "max_participants": null,
+      "participants": [],
+      "createur_id": 2,
+      "date_creation": "2025-10-11T18:22:01.917Z",
+      "soumis_par": 2
     }
   ],
   "annonces": [],
@@ -194,7 +208,7 @@
     {
       "id": 3,
       "type": "evenement",
-      "statut": "en_attente",
+      "statut": "accepte",
       "auteur_id": 2,
       "date_soumission": "2025-10-11T18:21:41.662Z",
       "data": {
@@ -205,7 +219,9 @@
         "jeu_id": 1,
         "type_evenement": "tournoi",
         "max_participants": null
-      }
+      },
+      "date_validation": "2025-10-11T18:22:01.915Z",
+      "validateur_id": 3
     }
   ]
 }
