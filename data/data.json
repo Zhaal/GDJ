@@ -94,7 +94,9 @@
         "active": false
       }
     },
-    "moderateurs": [],
+    "moderateurs": [
+      3
+    ],
     "lastSoumissionId": 1
   },
   "ludotheque": [
