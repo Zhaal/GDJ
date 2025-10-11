@@ -142,14 +142,7 @@
       "jeu_id": 1,
       "type_evenement": "initiation",
       "max_participants": null,
-      "participants": [
-        {
-          "membre_id": 2,
-          "nom": "Grégoire Hénocque",
-          "date_inscription": "2025-10-11T18:22:32.079Z",
-          "type": "joueur"
-        }
-      ],
+      "participants": [],
       "createur_id": 2,
       "date_creation": "2025-10-11T18:20:50.030Z"
     },
