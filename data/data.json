@@ -3,7 +3,7 @@
     {
       "nom": "Mars",
       "prix": 1,
-      "stock": 7,
+      "stock": 18,
       "categorie": "Chocolat",
       "id": 1,
       "date_ajout": "2025-10-11T17:57:11.538Z"
@@ -72,7 +72,7 @@
     "lastAdhesionId": 2,
     "lastEvenementId": 0,
     "lastAnnonceId": 0,
-    "lastReapproId": 0,
+    "lastReapproId": 1,
     "lastAchatDiversId": 0,
     "lastFondsId": 0,
     "soumissions": {
@@ -123,7 +123,19 @@
   ],
   "evenements": [],
   "annonces": [],
-  "reapprovisionnements": [],
+  "reapprovisionnements": [
+    {
+      "id": 1,
+      "produit_id": 1,
+      "produit_nom": "Mars",
+      "quantite": 11,
+      "cout_unitaire": 14.92,
+      "cout_total": 14.92,
+      "note": "",
+      "date": "2025-10-11T18:14:09.891Z",
+      "auteur_id": 1
+    }
+  ],
   "achatsDivers": [],
   "fonds": [],
   "membresPreferences": {},
