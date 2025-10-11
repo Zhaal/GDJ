@@ -3,7 +3,7 @@
     {
       "nom": "Mars",
       "prix": 1,
-      "stock": 18,
+      "stock": 7,
       "categorie": "Chocolat",
       "id": 1,
       "date_ajout": "2025-10-11T17:57:11.538Z"
@@ -69,12 +69,12 @@
     "lastMembreId": 3,
     "lastTransactionId": 1,
     "lastGameId": 0,
-    "lastAdhesionId": 2,
+    "lastAdhesionId": 1,
     "lastEvenementId": 0,
     "lastAnnonceId": 0,
-    "lastReapproId": 1,
+    "lastReapproId": 0,
     "lastAchatDiversId": 0,
-    "lastFondsId": 1,
+    "lastFondsId": 0,
     "soumissions": {
       "jeux": {
         "active": true
@@ -94,7 +94,8 @@
         "active": false
       }
     },
-    "moderateurs": []
+    "moderateurs": [],
+    "lastSoumissionId": 1
   },
   "ludotheque": [],
   "adhesions": [
@@ -108,45 +109,35 @@
       "mode_paiement": "paypal",
       "mode_paiement_autre": null,
       "date_creation": "2025-10-11T18:12:10.571Z"
-    },
-    {
-      "id": 2,
-      "membre_id": 3,
-      "annee": 2025,
-      "montant": 20,
-      "date_debut": "2025-10-11T18:12:39.406Z",
-      "date_fin": "2026-09-30T22:00:00.000Z",
-      "mode_paiement": "paypal",
-      "mode_paiement_autre": null,
-      "date_creation": "2025-10-11T18:12:44.728Z"
     }
   ],
   "evenements": [],
   "annonces": [],
-  "reapprovisionnements": [
-    {
-      "id": 1,
-      "produit_id": 1,
-      "produit_nom": "Mars",
-      "quantite": 11,
-      "cout_unitaire": 14.92,
-      "cout_total": 14.92,
-      "note": "",
-      "date": "2025-10-11T18:14:09.891Z",
-      "auteur_id": 1
-    }
-  ],
+  "reapprovisionnements": [],
   "achatsDivers": [],
-  "fonds": [
+  "fonds": [],
+  "membresPreferences": {},
+  "soumissions": [
     {
       "id": 1,
-      "montant": 177,
-      "provenance": "don",
-      "note": "",
-      "date": "2025-10-11T18:14:57.120Z",
-      "auteur_id": 1
+      "type": "jeu",
+      "statut": "en_attente",
+      "auteur_id": 2,
+      "date_soumission": "2025-10-11T18:15:50.840Z",
+      "data": {
+        "nom": "Gloomhaven",
+        "proprietaire": "Grégoire Hénocque",
+        "min_joueurs": 1,
+        "max_joueurs": 4,
+        "duree": 120,
+        "age_min": 14,
+        "description": "Gloomhaven  est un jeu de combat tactique d'inspiration européenne dans un monde persistant aux motivations changeantes. Les joueurs joueront le rôle d'aventuriers errants avec leurs propres compétences et leurs propres raisons de voyager dans ce coin sombre du monde. Les joueurs doivent travailler ensemble par nécessité pour éliminer les donjons menaçants et les ruines oubliées. Dans le processus, ils amélioreront leurs capacités avec de l'expérience et du butin, découvriront de nouveaux endroits à explorer et à piller, et développeront une histoire toujours plus riche alimentée par les décisions qu'ils prennent.\n C'est un jeu avec un monde persistant et changeant qui se joue idéalement sur de nombreuses sessions de jeu. Après un scénario, les joueurs prendront des décisions sur ce qu'il faut faire ensuite, ce qui déterminera la façon dont l'histoire se poursuivra, un peu comme un livre « Choisissez votre propre aventure ». Jouer à travers un scénario est une affaire de coopération où les joueurs se battront contre des monstres automatisés en utilisant un système de cartes innovant pour déterminer l'ordre de jeu et ce qu'un joueur fait à son tour.\n\nÀ chaque tour, un joueur choisit deux cartes à jouer de sa main. Le numéro sur la carte du haut détermine leur initiative pour le tour. Chaque carte a également une puissance supérieure et inférieure, et quand c'est le tour d'un joueur dans l'ordre d'initiative, il détermine s'il faut utiliser la puissance supérieure d'une carte et la puissance inférieure de l'autre, ou vice versa. Les joueurs doivent cependant faire attention, car avec le temps, ils perdront définitivement des cartes de leurs mains. S'ils mettent trop de temps à nettoyer un donjon, ils risquent de vous épuiser et d'être forcés de battre en retraite.",
+        "bggId": "174430",
+        "image": "https://cf.geekdo-images.com/sZYp_3BTDGjh2unaZfZmuA__original/img/7d-lj5Gd1e8PFnD97LYFah2c45M=/0x0/filters:format(jpeg)/pic2437871.jpg",
+        "thumbnail": "https://cf.geekdo-images.com/sZYp_3BTDGjh2unaZfZmuA__small/img/veqFeP4d_3zNhFc3GNBkV95rBEQ=/fit-in/200x150/filters:strip_icc()/pic2437871.jpg",
+        "annee_publication": "2017",
+        "note": "8.55"
+      }
     }
-  ],
-  "membresPreferences": {},
-  "soumissions": []
+  ]
 }
