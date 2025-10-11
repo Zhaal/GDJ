@@ -74,7 +74,7 @@
     "lastAnnonceId": 0,
     "lastReapproId": 1,
     "lastAchatDiversId": 0,
-    "lastFondsId": 0,
+    "lastFondsId": 1,
     "soumissions": {
       "jeux": {
         "active": true
@@ -137,7 +137,16 @@
     }
   ],
   "achatsDivers": [],
-  "fonds": [],
+  "fonds": [
+    {
+      "id": 1,
+      "montant": 177,
+      "provenance": "don",
+      "note": "",
+      "date": "2025-10-11T18:14:57.120Z",
+      "auteur_id": 1
+    }
+  ],
   "membresPreferences": {},
   "soumissions": []
 }
