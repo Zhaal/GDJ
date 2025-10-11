@@ -3,15 +3,15 @@
   "membres": [
     {
       "id": 1,
-      "pseudo": "Kulbo",
-      "nom": "FilzVVZnZAVkEnh+",
-      "prenom": "EQMiW1BndE9kEnh+",
-      "email": "HilzVVZnZAVhPRcsMHdlRSg/E2wZenAmJhJaOBwfcDo=",
-      "mot_de_passe": "HhMMRQ==",
+      "pseudo": "Zhaal",
+      "nom": "FAkFXVBdC19OCxMvGwRpEA==",
+      "prenom": "FXcGaUNnVkNMCw8vGwRpEA==",
+      "email": null,
+      "mot_de_passe": "JRMmRFBnXlxjORxx",
       "role": "admin",
       "statut": "valide",
       "ardoise": 0,
-      "date_inscription": "2025-10-11T17:58:25.470Z"
+      "date_inscription": "2025-10-11T18:00:23.502Z"
     }
   ],
   "transactions": [],
