@@ -168,7 +168,8 @@
           "membre_id": 2,
           "nom": "Grégoire Hénocque",
           "date_inscription": "2025-10-11T18:23:07.371Z",
-          "type": "reserve"
+          "type": "joueur",
+          "promotion_auto": true
         }
       ],
       "createur_id": 2,
